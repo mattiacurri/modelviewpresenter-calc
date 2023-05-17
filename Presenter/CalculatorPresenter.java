@@ -11,9 +11,9 @@ public class CalculatorPresenter {
   CalculatorView view;
   CalculatorModel model;
 
-  CalculatorPresenter() {
-    CalculatorView view = new CalculatorView();
-    CalculatorModel model = new CalculatorModel();
+  public CalculatorPresenter() {
+    view = new CalculatorView();
+    model = new CalculatorModel();
   }
   public void start() {
     view.showMenu();
@@ -31,10 +31,5 @@ public class CalculatorPresenter {
           System.exit(0);
       }
     }
-  }
-
-  public static void main(String[] args) {
-    CalculatorPresenter presenter = new CalculatorPresenter();
-    presenter.start();
   }
 }
