@@ -1,9 +1,10 @@
 package Model;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 
 public class CalculatorModel {
-  public BigInteger sum(BigInteger... numbers) {
+  public BigInteger sum(ArrayList<BigInteger> numbers) {
     BigInteger output = new BigInteger("0");
     for (BigInteger number : numbers) {
       output = output.add(number);
