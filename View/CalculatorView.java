@@ -3,7 +3,6 @@ package View;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 
 public class CalculatorView {
@@ -44,7 +43,7 @@ public class CalculatorView {
         for (String i : nextLine) {
           numbersInput.add(new BigInteger(i));
         }
-    } else {
+    } else if (choice == 4) {
       int numbers = 0;
       System.out.print("Inserire primo numero: ");
       numbers = scanner.nextInt();
